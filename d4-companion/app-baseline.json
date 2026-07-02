@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-02T21:48:30.780Z",
+  "app": {
+    "name": "D4 Companion: Unofficial",
+    "bundleId": "com.dingalabs.d4companion"
+  },
+  "gameState": {
+    "knownSeason": "Season 14",
+    "knownSeasonTheme": "Death Awakening",
+    "knownPatch": "3.1.0",
+    "knownPatchDate": "2026-06-30"
+  },
+  "remoteUrls": {
+    "baseline": "https://dinga-hub.github.io/d4-companion/app-baseline.json",
+    "baselineR2": "https://pub-385193dc84074a5694854e8ce4e0f1f2.r2.dev/audit/app-baseline.json",
+    "buildsMetaTierList": "https://pub-385193dc84074a5694854e8ce4e0f1f2.r2.dev/builds/meta-tier-list.json",
+    "eventsSchedule": "https://pub-385193dc84074a5694854e8ce4e0f1f2.r2.dev/events/schedule.json"
+  },
+  "buildsSnapshot": {
+    "generatedAt": "2026-07-01T19:54:40.559Z",
+    "buildCount": 80,
+    "sTierBuilds": [
+      "Call of the Ancients (barbarian)",
+      "Mighty Throw (barbarian)",
+      "Minion (barbarian)",
+      "Whirlwind (barbarian)",
+      "Death Trap (rogue)",
+      "Evade (spiritborn)",
+      "Penetrating Shot (rogue)"
+    ]
+  },
+  "features": {
+    "F1_cube": {
+      "coverage": "ok",
+      "dataSource": "src/features/cube/cube-seed.ts → SQLite (offline)",
+      "lastVerifiedPatch": "3.1.0",
+      "notes": "Cube schema v9. Curated for patch 3.1.0.",
+      "topics": [
+        "Add Affix",
+        "Chaotic Reroll",
+        "Focused Reroll",
+        "Remove Affix",
+        "Transfigure Item",
+        "Unique Power Reroll",
+        "3-to-1 Transmutation",
+        "Recycle Uniques",
+        "Upgrade to Unique",
+        "Upgrade to Legendary",
+        "Upgrade to Mythic",
+        "Reroll Set Charm",
+        "Craft Unique Charm",
+        "Amalgamation",
+        "Tribute of Armaments — Rare → Greater",
+        "Tribute of Armaments — Greater → Mythic",
+        "Escalation Sigil (Astaroth fight)",
+        "Boss Trophy → Unique",
+        "Rune Crafting"
+      ],
+      "knownGaps": []
+    },
+    "F2_timers": {
+      "coverage": "automated",
+      "dataSource": "Firebase helltides.com + R2 fallback + hourly parity CI",
+      "topics": [
+        "helltide",
+        "world boss",
+        "legion"
+      ],
+      "knownGaps": [
+        "Pandemonium Ruptures not in v1.0 timer scope"
+      ]
+    },
+    "F3_transfig": {
+      "coverage": "ok",
+      "dataSource": "src/features/transfig/transfig-view.tsx (static UI)",
+      "lastVerifiedPatch": "3.1.0",
+      "lastVerifiedSeason": "Season 14",
+      "topics": [
+        "brick rate ~95%",
+        "replace affix risk",
+        "steam preconditions",
+        "outcome table",
+        "prism pools"
+      ],
+      "knownGaps": []
+    },
+    "F4_builds": {
+      "coverage": "automated",
+      "dataSource": "Worker scrape-builds (daily) → R2 meta-tier-list.json",
+      "lastVerifiedPatch": "3.1.0",
+      "lastVerifiedSeason": "Season 14",
+      "topics": [
+        "maxroll endgame tier list",
+        "d4builds tier list",
+        "weighted meta tier"
+      ],
+      "knownGaps": []
+    },
+    "F5_mythicFarm": {
+      "coverage": "ok",
+      "dataSource": "src/features/drops/strategy-content.ts + docs/farming-strategy.md",
+      "lastVerifiedPatch": "3.1.0",
+      "lastVerifiedSeason": "Season 14",
+      "notes": "Last fact-checked 2026-07-01.",
+      "topics": [
+        "Mythic Farming Tier List",
+        "Kurast Undercity",
+        "Boss Ladder",
+        "Mephisto",
+        "Mythic Crafting",
+        "Mythic Seals",
+        "Corrupted Reaper (Seasonal Lair Boss)",
+        "Ruptures → Realmwalker → Deathtoll Chamber",
+        "Horadric Cube — Upgrade to Mythic",
+        "Kurast Undercity (Mythic Tribute of Armaments)",
+        "Astaroth → The Butcher loop",
+        "Belial (Exalted Lair Boss)",
+        "Tormented Duriel / Andariel",
+        "Mephisto (Exalted Lair Boss)",
+        "Resplendent Sparks (Jeweler)",
+        "World Drops"
+      ],
+      "knownGaps": []
+    }
+  },
+  "knownTopics": [
+    "Add Affix",
+    "Chaotic Reroll",
+    "Focused Reroll",
+    "Remove Affix",
+    "Transfigure Item",
+    "Unique Power Reroll",
+    "3-to-1 Transmutation",
+    "Recycle Uniques",
+    "Upgrade to Unique",
+    "Upgrade to Legendary",
+    "Upgrade to Mythic",
+    "Reroll Set Charm",
+    "Craft Unique Charm",
+    "Amalgamation",
+    "Tribute of Armaments — Rare → Greater",
+    "Tribute of Armaments — Greater → Mythic",
+    "Escalation Sigil (Astaroth fight)",
+    "Boss Trophy → Unique",
+    "Rune Crafting",
+    "add_affix",
+    "chaotic_reroll",
+    "focused_reroll",
+    "remove_affix",
+    "transfigure",
+    "unique_power_reroll",
+    "transmutation",
+    "recycle_uniques",
+    "upgrade_to_unique",
+    "upgrade_to_legendary",
+    "upgrade_to_mythic",
+    "reroll_set_charm",
+    "craft_unique_charm",
+    "amalgamation",
+    "rune_crafting",
+    "aggressive tuning prism",
+    "pragmatic tuning prism",
+    "protector tuning prism",
+    "resourceful tuning prism",
+    "adept tuning prism",
+    "chromatic tuning prism",
+    "entropic tuning prism",
+    "kullean tuning prism",
+    "helltide timer",
+    "world boss timer",
+    "legion timer",
+    "helltides.com",
+    "transfiguration brick rate",
+    "transfiguration replace affix risk",
+    "kullean tuning prism",
+    "entropic tuning prism",
+    "maxroll tier list",
+    "d4builds tier list",
+    "Mythic Farming Tier List",
+    "Kurast Undercity",
+    "Boss Ladder",
+    "Mephisto",
+    "Mythic Crafting",
+    "Mythic Seals",
+    "Corrupted Reaper (Seasonal Lair Boss)",
+    "Ruptures → Realmwalker → Deathtoll Chamber",
+    "Horadric Cube — Upgrade to Mythic",
+    "Kurast Undercity (Mythic Tribute of Armaments)",
+    "Astaroth → The Butcher loop",
+    "Belial (Exalted Lair Boss)",
+    "Tormented Duriel / Andariel",
+    "Mephisto (Exalted Lair Boss)",
+    "Resplendent Sparks (Jeweler)",
+    "World Drops",
+    "kurast undercity",
+    "mythic tribute of armaments",
+    "astaroth",
+    "escalation sigil",
+    "mephisto",
+    "resplendent sparks",
+    "mythic seals",
+    "Season 14",
+    "Death Awakening",
+    "3.1.0"
+  ],
+  "expectedMissingTopics": [
+    "Pandemonium Fragments",
+    "Pandemonium Ruptures",
+    "Mythic 3.0"
+  ],
+  "alertRules": {
+    "p0": [
+      "blizzard_patch_newer_than_baseline",
+      "new_season_announced",
+      "core_fact_contradicts_baseline"
+    ],
+    "p1": [
+      "expected_missing_topic_now_mainstream",
+      "tier_list_major_shift",
+      "new_cube_recipe_or_crafting_rule",
+      "new_endgame_farm_consensus",
+      "timer_source_drift_reports",
+      "feature_known_gap_confirmed_by_sources"
+    ],
+    "p2": [
+      "community_chatter_only",
+      "single_creator_opinion",
+      "unconfirmed_leak"
+    ],
+    "silentWhen": [
+      "zero_p0_and_zero_p1",
+      "only_p2_findings",
+      "findings_already_in_knownTopics"
+    ]
+  },
+  "discovery": {
+    "recencyDays": 14,
+    "categories": [
+      "season_and_patch_lifecycle",
+      "class_balance_and_meta",
+      "endgame_farming_loops",
+      "horadric_cube_and_crafting",
+      "mythic_unique_loot_systems",
+      "transfiguration_rules",
+      "event_timers_and_schedules",
+      "new_items_bosses_dungeons_seasonal_mechanics",
+      "third_party_source_changes"
+    ],
+    "sourceTiers": [
+      {
+        "tier": "A_official",
+        "role": "Discover current season/patch first — never hardcode patch numbers",
+        "examples": [
+          "news.blizzard.com/en-us/diablo4"
+        ]
+      },
+      {
+        "tier": "B_databases",
+        "role": "Meta, cube, builds, guides",
+        "examples": [
+          "maxroll.gg/d4",
+          "d4builds.gg",
+          "icy-veins.com/d4",
+          "wowhead.com/d4",
+          "mobalytics.gg/d4"
+        ]
+      },
+      {
+        "tier": "C_news",
+        "role": "Patch roundups and season previews",
+        "examples": [
+          "ign.com",
+          "gamesradar.com",
+          "pcgamer.com"
+        ]
+      },
+      {
+        "tier": "D_community",
+        "role": "Consensus, strategies, drift reports",
+        "examples": [
+          "reddit.com/r/diablo4",
+          "us.forums.blizzard.com/en/d4"
+        ]
+      },
+      {
+        "tier": "E_video",
+        "role": "Practical loops — discover active creators this season",
+        "examples": [
+          "youtube.com search by upload date"
+        ]
+      }
+    ]
+  },
+  "scanProtocol": {
+    "summary": "Fetch this baseline first. Discover live game state from the web. Emit ALERT only on P0/P1 deltas vs baseline.",
+    "steps": [
+      "Fetch baseline JSON from remoteUrls.baseline — abort if unavailable.",
+      "Fetch remoteUrls.buildsMetaTierList for F4 cross-check.",
+      "From Tier A sources, determine current season name, patch version, and patch date.",
+      "If live patch is newer than gameState.knownPatch → P0.",
+      "Open web discovery across all discovery.categories (last discovery.recencyDays days).",
+      "Any mechanic/term not in knownTopics → mark novelty=NOVEL.",
+      "Any term in expectedMissingTopics now mainstream in Tier B–D → P1.",
+      "Compare findings to features.F1–F5 knownGaps — confirmed gap → P1.",
+      "If zero P0 and zero P1 → output scanProtocol.outputWhenNoChange only.",
+      "Else → output scanProtocol.outputWhenAlert in Portuguese (Brazil), max 600 words."
+    ],
+    "outputWhenNoChange": "D4 Companion scan — [UTC date]\\nStatus: NO MATERIAL CHANGES\\n(baseline generatedAt, gameState unchanged)",
+    "outputWhenAlert": "Markdown alert in pt-BR: Resumo, P0, P1, NOVEL, Delta por feature F1–F5, Fontes com URL+data. Tell Diego to paste into Cursor — do not edit the app."
+  }
+}
