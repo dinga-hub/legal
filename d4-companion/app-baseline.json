@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-02T21:48:30.780Z",
+  "generatedAt": "2026-07-02T21:49:07.405Z",
   "app": {
     "name": "D4 Companion: Unofficial",
     "bundleId": "com.dingalabs.d4companion"
@@ -12,7 +12,7 @@
     "knownPatchDate": "2026-06-30"
   },
   "remoteUrls": {
-    "baseline": "https://dinga-hub.github.io/d4-companion/app-baseline.json",
+    "baseline": "https://dinga-hub.github.io/legal/d4-companion/app-baseline.json",
     "baselineR2": "https://pub-385193dc84074a5694854e8ce4e0f1f2.r2.dev/audit/app-baseline.json",
     "buildsMetaTierList": "https://pub-385193dc84074a5694854e8ce4e0f1f2.r2.dev/builds/meta-tier-list.json",
     "eventsSchedule": "https://pub-385193dc84074a5694854e8ce4e0f1f2.r2.dev/events/schedule.json"
