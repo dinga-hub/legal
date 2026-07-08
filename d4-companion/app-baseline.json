@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-02T21:49:07.405Z",
+  "generatedAt": "2026-07-08T16:04:47.123Z",
   "app": {
     "name": "D4 Companion: Unofficial",
     "bundleId": "com.dingalabs.d4companion"
@@ -35,7 +35,7 @@
       "coverage": "ok",
       "dataSource": "src/features/cube/cube-seed.ts → SQLite (offline)",
       "lastVerifiedPatch": "3.1.0",
-      "notes": "Cube schema v9. Curated for patch 3.1.0.",
+      "notes": "Cube schema v10. Curated for patch 3.1.0.",
       "topics": [
         "Add Affix",
         "Chaotic Reroll",
@@ -81,7 +81,9 @@
         "replace affix risk",
         "steam preconditions",
         "outcome table",
-        "prism pools"
+        "prism pools",
+        "Occultist enchant on unique/mythic",
+        "mythic max rolls on transfig/temper/enchant"
       ],
       "knownGaps": []
     },
@@ -205,9 +207,8 @@
     "3.1.0"
   ],
   "expectedMissingTopics": [
-    "Pandemonium Fragments",
-    "Pandemonium Ruptures",
-    "Mythic 3.0"
+    "Pandemonium Rupture timer",
+    "Guaranteed Unique Affixes per-item list"
   ],
   "alertRules": {
     "p0": [
@@ -303,6 +304,7 @@
       "Any mechanic/term not in knownTopics → mark novelty=NOVEL.",
       "Any term in expectedMissingTopics now mainstream in Tier B–D → P1.",
       "Compare findings to features.F1–F5 knownGaps — confirmed gap → P1.",
+      "Before P0 “contradicts baseline”: read recipe itemReq/notes and UI copy — listing a recipe name is not claiming it works on all item types.",
       "If zero P0 and zero P1 → output scanProtocol.outputWhenNoChange only.",
       "Else → output scanProtocol.outputWhenAlert in Portuguese (Brazil), max 600 words."
     ],
