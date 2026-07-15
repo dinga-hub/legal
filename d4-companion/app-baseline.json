@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-08T16:04:47.123Z",
+  "generatedAt": "2026-07-15T19:17:44.361Z",
   "app": {
     "name": "D4 Companion: Unofficial",
     "bundleId": "com.dingalabs.d4companion"
@@ -8,8 +8,8 @@
   "gameState": {
     "knownSeason": "Season 14",
     "knownSeasonTheme": "Death Awakening",
-    "knownPatch": "3.1.0",
-    "knownPatchDate": "2026-06-30"
+    "knownPatch": "3.1.1",
+    "knownPatchDate": "2026-07-14"
   },
   "remoteUrls": {
     "baseline": "https://dinga-hub.github.io/legal/d4-companion/app-baseline.json",
@@ -34,8 +34,8 @@
     "F1_cube": {
       "coverage": "ok",
       "dataSource": "src/features/cube/cube-seed.ts → SQLite (offline)",
-      "lastVerifiedPatch": "3.1.0",
-      "notes": "Cube schema v10. Curated for patch 3.1.0.",
+      "lastVerifiedPatch": "3.1.1",
+      "notes": "Cube schema v11. Curated for patch 3.1.1.",
       "topics": [
         "Add Affix",
         "Chaotic Reroll",
@@ -68,7 +68,7 @@
         "legion"
       ],
       "knownGaps": [
-        "Pandemonium Ruptures not in v1.0 timer scope"
+        "No countdown for Pandemonium Ruptures — informational card on Timers only (Boss Ladder in F5)"
       ]
     },
     "F3_transfig": {
@@ -90,7 +90,7 @@
     "F4_builds": {
       "coverage": "automated",
       "dataSource": "Worker scrape-builds (daily) → R2 meta-tier-list.json",
-      "lastVerifiedPatch": "3.1.0",
+      "lastVerifiedPatch": "3.1.1",
       "lastVerifiedSeason": "Season 14",
       "topics": [
         "maxroll endgame tier list",
@@ -102,9 +102,9 @@
     "F5_mythicFarm": {
       "coverage": "ok",
       "dataSource": "src/features/drops/strategy-content.ts + docs/farming-strategy.md",
-      "lastVerifiedPatch": "3.1.0",
+      "lastVerifiedPatch": "3.1.1",
       "lastVerifiedSeason": "Season 14",
-      "notes": "Last fact-checked 2026-07-01.",
+      "notes": "Last fact-checked 2026-07-15.",
       "topics": [
         "Mythic Farming Tier List",
         "Kurast Undercity",
@@ -204,7 +204,7 @@
     "mythic seals",
     "Season 14",
     "Death Awakening",
-    "3.1.0"
+    "3.1.1"
   ],
   "expectedMissingTopics": [
     "Pandemonium Rupture timer",
