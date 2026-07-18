@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-15T19:17:44.361Z",
+  "generatedAt": "2026-07-18T01:50:37.713Z",
   "app": {
     "name": "D4 Companion: Unofficial",
     "bundleId": "com.dingalabs.d4companion"
@@ -8,8 +8,8 @@
   "gameState": {
     "knownSeason": "Season 14",
     "knownSeasonTheme": "Death Awakening",
-    "knownPatch": "3.1.1",
-    "knownPatchDate": "2026-07-14"
+    "knownPatch": "3.1.1a",
+    "knownPatchDate": "2026-07-16"
   },
   "remoteUrls": {
     "baseline": "https://dinga-hub.github.io/legal/d4-companion/app-baseline.json",
@@ -34,8 +34,8 @@
     "F1_cube": {
       "coverage": "ok",
       "dataSource": "src/features/cube/cube-seed.ts → SQLite (offline)",
-      "lastVerifiedPatch": "3.1.1",
-      "notes": "Cube schema v11. Curated for patch 3.1.1.",
+      "lastVerifiedPatch": "3.1.1a",
+      "notes": "Cube schema v12. Curated for patch 3.1.1a. 3.1.1a: crafted Mythic equip limit removed; Mythic modifier no longer applies to Unique Charms/Seals.",
       "topics": [
         "Add Affix",
         "Chaotic Reroll",
@@ -90,7 +90,7 @@
     "F4_builds": {
       "coverage": "automated",
       "dataSource": "Worker scrape-builds (daily) → R2 meta-tier-list.json",
-      "lastVerifiedPatch": "3.1.1",
+      "lastVerifiedPatch": "3.1.1a",
       "lastVerifiedSeason": "Season 14",
       "topics": [
         "maxroll endgame tier list",
@@ -102,9 +102,9 @@
     "F5_mythicFarm": {
       "coverage": "ok",
       "dataSource": "src/features/drops/strategy-content.ts + docs/farming-strategy.md",
-      "lastVerifiedPatch": "3.1.1",
+      "lastVerifiedPatch": "3.1.1a",
       "lastVerifiedSeason": "Season 14",
-      "notes": "Last fact-checked 2026-07-15.",
+      "notes": "Last fact-checked 2026-07-17. 3.1.1a: crafted Mythic equip limit removed; Corrupted Reaper Mythic/Iconic drop rates increased.",
       "topics": [
         "Mythic Farming Tier List",
         "Kurast Undercity",
@@ -204,7 +204,11 @@
     "mythic seals",
     "Season 14",
     "Death Awakening",
-    "3.1.1"
+    "3.1.1a",
+    "crafted Mythic equip limit removed",
+    "one-crafted Mythic restriction removed",
+    "Corrupted Reaper Mythic Iconic drop rate increase",
+    "Unique Charm Seal Mythic modifier Cube bug fix"
   ],
   "expectedMissingTopics": [
     "Pandemonium Rupture timer",
@@ -294,16 +298,16 @@
     ]
   },
   "scanProtocol": {
-    "summary": "Fetch this baseline first. Discover live game state from the web. Emit ALERT only on P0/P1 deltas vs baseline.",
+    "summary": "Start from the baseline provided for this run. Discover live game state from the web. Emit ALERT only on P0/P1 deltas vs that baseline.",
     "steps": [
-      "Fetch baseline JSON from remoteUrls.baseline — abort if unavailable.",
-      "Fetch remoteUrls.buildsMetaTierList for F4 cross-check.",
+      "Diff gate: read generatedAt + gameState.knownPatch from the baseline for THIS run. Discard prior chat memory of older patches/seasons/gaps. If this run embeds baseline JSON (Gemini Scheduled Actions), that JSON is sole truth — do NOT fetch remoteUrls.baseline/baselineR2 (may be stale). Otherwise fetch remoteUrls.baseline and abort if unavailable.",
+      "Fetch remoteUrls.buildsMetaTierList for F4 cross-check when network is available.",
       "From Tier A sources, determine current season name, patch version, and patch date.",
-      "If live patch is newer than gameState.knownPatch → P0.",
+      "If live patch is newer than gameState.knownPatch → P0. If live patch equals knownPatch, do NOT emit blizzard_patch_newer_than_baseline.",
       "Open web discovery across all discovery.categories (last discovery.recencyDays days).",
       "Any mechanic/term not in knownTopics → mark novelty=NOVEL.",
       "Any term in expectedMissingTopics now mainstream in Tier B–D → P1.",
-      "Compare findings to features.F1–F5 knownGaps — confirmed gap → P1.",
+      "Compare findings to features.F1–F5 knownGaps — confirmed gap → P1. Do not re-alert facts already covered by knownTopics or lastVerifiedPatch notes.",
       "Before P0 “contradicts baseline”: read recipe itemReq/notes and UI copy — listing a recipe name is not claiming it works on all item types.",
       "If zero P0 and zero P1 → output scanProtocol.outputWhenNoChange only.",
       "Else → output scanProtocol.outputWhenAlert in Portuguese (Brazil), max 600 words."
