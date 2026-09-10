@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Commander Life Track</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #f9f9f9;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #6b6b6b;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 28px; font-weight: 700; color: #111; margin-bottom: 6px; }
+    .meta { font-size: 13px; color: #888; margin-bottom: 40px; }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #111;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    h3 { font-size: 15px; font-weight: 600; color: #111; margin: 20px 0 6px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul { margin: 10px 0 14px 20px; color: #333; }
+    li { margin-bottom: 6px; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #f0f4ff;
+      border-left: 3px solid #0066cc;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+    footer { margin-top: 60px; font-size: 13px; color: #aaa; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">Dinga Labs</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Commander Life Track &nbsp;·&nbsp; Last updated: September 2026</p>
+
+    <div class="highlight">
+      <strong>Short version:</strong> You can use the Table (life counter) with no account at all — nothing is collected. Creating an account (optional, for Decks/Groups/Player Area) collects only your email, a display name, and an optional avatar photo. We never sell your data.
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>
+      This app is published by Diego Lissoni, operating under the Dinga Labs brand.
+      Contact: <a href="mailto:support.dingalabs@gmail.com">support.dingalabs@gmail.com</a>
+    </p>
+
+    <h2>2. Information We Collect</h2>
+    <p>The Table (life counter, commander damage, counters) works fully offline with no account and collects nothing.</p>
+    <p>Creating an account is optional and unlocks Decks, Player Area, and Groups. If you create one, we collect:</p>
+    <ul>
+      <li><strong>Account info</strong> — your email address, or your Google/Apple account identifier if you sign in that way. We never see or store your password when you use Google or Apple sign-in.</li>
+      <li><strong>Profile info</strong> — a display name you choose, and an optional avatar photo you upload.</li>
+      <li><strong>App content you create</strong> — decks you build (including commander choices looked up via the public Scryfall card database), playgroups you join or create, match/game history you save, and win/loss/kill-credit stats derived from it.</li>
+      <li><strong>Anonymous usage analytics</strong> — screen views and feature interactions (via PostHog). Not linked to your name or email.</li>
+      <li><strong>Crash reports and diagnostic data</strong> — stack traces and device model/OS version when the app crashes (via Sentry).</li>
+      <li><strong>Purchase receipts</strong> — if you subscribe to a paid tier, the transaction is processed by Apple or Google and managed by RevenueCat. We receive only an anonymous subscriber ID and entitlement status — no payment card details.</li>
+      <li><strong>Advertising data</strong> — on the free, ad-supported tier, banner ads are served by Google AdMob, which may use your device's advertising identifier for ad personalization. On iOS 14.5+, we show Apple's App Tracking Transparency prompt before any tracking occurs; you can opt out any time in Settings → Privacy &amp; Security → Tracking.</li>
+      <li><strong>Push notification token</strong> — if you enable notifications, a device push token so we can notify you when a group game is saved. You can disable this any time in the app's Account settings.</li>
+    </ul>
+
+    <h3>Avatar photo moderation</h3>
+    <p>
+      If you upload a profile or group photo, it is checked automatically by a server-side content
+      moderation step (Google Cloud Vision SafeSearch) before it is stored, to block explicit or
+      abusive images. The check happens on our server; the image itself is stored via our backend
+      provider, Supabase, not by Google.
+    </p>
+
+    <h3>What other members of your playgroup can see</h3>
+    <p>
+      Commander is a social game — if you join a playgroup, other members of that same group can see
+      your display name, avatar, decks, and game/stats history within that group. This is core to how
+      the app works and is not shared outside groups you've joined.
+    </p>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>Account info: to let you sign in and sync your decks, groups, and game history across devices.</li>
+      <li>Profile info and app content: to power the core features (Decks, Player Area, Groups, match history).</li>
+      <li>Crash data: to identify and fix bugs.</li>
+      <li>Usage analytics: to understand which features are used most and improve the app.</li>
+      <li>Purchase data: to unlock paid-tier features for subscribers.</li>
+      <li>Advertising data: to serve relevant ads to free-tier users via AdMob.</li>
+      <li>Push token: to deliver the notifications you've opted into.</li>
+    </ul>
+    <p>We do not sell your data to third parties. We do not use your data for marketing emails.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>The app integrates the following third-party services, each with their own privacy policy:</p>
+    <ul>
+      <li><a href="https://supabase.com/privacy" target="_blank">Supabase</a> — authentication, database, and file storage backend</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google Cloud Vision</a> — automated avatar photo moderation</li>
+      <li><a href="https://scryfall.com/privacy" target="_blank">Scryfall</a> — public Magic: The Gathering card data lookup (card searches only, no account data is sent)</li>
+      <li><a href="https://posthog.com/privacy" target="_blank">PostHog</a> — anonymous product analytics</li>
+      <li><a href="https://sentry.io/privacy/" target="_blank">Sentry</a> — crash reporting</li>
+      <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a> — subscription management</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a> — ad serving (free tier only)</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google Sign-In</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank">Sign in with Apple</a> — optional sign-in methods</li>
+    </ul>
+
+    <h2>5. Data Storage and Retention</h2>
+    <p>
+      Table game state (life totals, counters, current game) is stored only on your device and never
+      transmitted anywhere. Account data, decks, groups, and game history are stored in our Supabase
+      backend for as long as your account exists, so they sync across your devices. Anonymous analytics
+      and crash reports are retained for up to 12 months by the respective third-party processors.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>This app is not directed at children under 13 (or under 16 in the EU). We do not knowingly collect data from children.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>
+      You can delete app content (decks, groups you own, your profile photo) directly in the app. To
+      request full account deletion or a copy of your data, email us at
+      <a href="mailto:support.dingalabs@gmail.com">support.dingalabs@gmail.com</a>. If you have concerns
+      about data held by a third-party service, you can also contact them directly using the links in
+      Section 4.
+    </p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this policy as the app evolves. Material changes will be noted in the app's update notes. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Questions? Email <a href="mailto:support.dingalabs@gmail.com">support.dingalabs@gmail.com</a>
+    </p>
+
+    <footer>© 2026 Dinga Labs · <a href="../terms/">Terms of Service</a></footer>
+  </div>
+</body>
+</html>
