@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T20:24:17.054Z",
+  "generatedAt": "2026-11-04T14:49:19.369Z",
   "app": {
     "name": "D4 Companion: Unofficial",
     "bundleId": "com.dingalabs.d4companion"
@@ -8,8 +8,8 @@
   "gameState": {
     "knownSeason": "Season 15",
     "knownSeasonTheme": "Hell's Legacy",
-    "knownPatch": "3.2.2",
-    "knownPatchDate": "2026-09-30"
+    "knownPatch": "3.2.4",
+    "knownPatchDate": "2026-10-28"
   },
   "remoteUrls": {
     "baseline": "https://dinga-hub.github.io/legal/d4-companion/app-baseline.json",
@@ -40,8 +40,8 @@
     "F1_cube": {
       "coverage": "ok",
       "dataSource": "src/features/cube/cube-seed.ts → SQLite (offline)",
-      "lastVerifiedPatch": "3.2.2",
-      "notes": "Cube schema v14. Curated for patch 3.2.2 (Season 15, Hell's Legacy). Upgrade to Mythic is a 1:1 transfer costing 5 Resplendent Sparks (Pandemonium Fragments no longer used by the recipe), with a one-equipped \"Crafted\" tag. New: Affix Value Reroll, Horadric Reroll, Seasonal Rune Conversion, Classic Runewords. Chaotic/Focused Reroll still removed for Unique + Mythic Unique. 3.2.2: Henri's Perquisition Cube crafting fixed. Unique Power Reroll eligibility unconfirmed (Maxroll says Ancestral only).",
+      "lastVerifiedPatch": "3.2.3",
+      "notes": "Cube schema v14. Curated for patch 3.2.3 (Season 15, Hell's Legacy). Upgrade to Mythic is a 1:1 transfer costing 5 Resplendent Sparks (Pandemonium Fragments no longer used by the recipe), with a one-equipped \"Crafted\" tag. New: Affix Value Reroll, Horadric Reroll, Seasonal Rune Conversion, Classic Runewords. Chaotic/Focused Reroll still removed for Unique + Mythic Unique. 3.2.2: Henri's Perquisition Cube crafting fixed. 3.2.3 (bug-fix only): Cube rerolls restored for Impairment Reduction, Barrier Generation, Healing, Critical Strike Damage. Unique Power Reroll eligibility unconfirmed (Maxroll says Ancestral only).",
       "topics": [
         "Add Affix",
         "Chaotic Reroll",
@@ -100,7 +100,7 @@
     "F4_builds": {
       "coverage": "automated",
       "dataSource": "Worker scrape-builds (daily) → R2 meta-tier-list.json",
-      "lastVerifiedPatch": "3.2.2",
+      "lastVerifiedPatch": "3.2.4",
       "lastVerifiedSeason": "Season 15",
       "topics": [
         "maxroll endgame tier list",
@@ -221,7 +221,7 @@
     "Season of Hell's Legacy",
     "Season 15",
     "Hell's Legacy",
-    "3.2.2",
+    "3.2.4",
     "crafted Mythic equip limit removed",
     "one-crafted Mythic restriction removed",
     "Corrupted Reaper Mythic Iconic drop rate increase",
@@ -262,6 +262,10 @@
     "Character Rebirth",
     "Henri's Perquisition Cube crafting fix (3.2.2)",
     "Chamber of Bone rewards fix (3.2.2)",
+    "Cube reroll restored for Impairment Reduction, Barrier Generation, Healing and Critical Strike Damage (3.2.3)",
+    "Splinter of Evil before seasonal questline blocks Prime Evil Powers fix (3.2.3)",
+    "Tyrael blocking Baal loot fix (3.2.3)",
+    "Prime Evil Splinter stack size 1 to 99 (3.2.4, Build #74043)",
     "Baal runs no key after questline",
     "Lair Boss Mythics drop only from own unique loot pool (3.2.1)",
     "Warlock class"
